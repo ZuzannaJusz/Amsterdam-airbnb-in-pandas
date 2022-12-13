@@ -16,7 +16,7 @@ st.write(
 )
 
 
-def filter_dataframe(df: final_df) -> final_df:
+def filter_dataframe(final_df: pd.DataFrame) -> pd.DataFrame:
     """
     Adds a UI on top of a dataframe to let viewers filter columns
     Args:
