@@ -16,7 +16,7 @@ st.write(
 )
 
 
-def filter_dataframe(final_df: pd.DataFrame) -> pd.DataFrame:
+def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     """
     Adds a UI on top of a dataframe to let viewers filter columns
     Args:
@@ -27,9 +27,9 @@ def filter_dataframe(final_df: pd.DataFrame) -> pd.DataFrame:
     modify = st.checkbox("Add filters")
 
     if not modify:
-        return final_df
+        return df
 
-    final_df = df.copy()
+    df = df.copy()
 
     # Try to convert datetimes into a standard format (datetime, no timezone)
     for col in df.columns:
