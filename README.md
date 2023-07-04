@@ -21,3 +21,4 @@ Project was made during CoRise Python for Data Science Course.
 - creating function to fill information about number of beds based on room type
 - merging dataset with places info with calendar dataset
 - importing cleaned dataset to streamlit
+- whole project was created in google colabs
